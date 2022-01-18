@@ -1,0 +1,3 @@
+- Year
+- Mechanical
+- Marketing, Social Media
