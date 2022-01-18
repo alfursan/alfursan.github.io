@@ -1,3 +1,0 @@
-- Year 4
-- Mechanical
-- Lead Engineer
