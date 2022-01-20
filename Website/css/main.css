@@ -1,0 +1,117 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v21-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v21-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v21-latin-regular.woff") format("woff"), url("../fonts/montserrat-v21-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v21-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v21-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v21-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v21-latin-700.woff") format("woff"), url("../fonts/montserrat-v21-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v21-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+:root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+.content h1 {
+  text-align: center;
+}
+
+.cover {
+  width: 100%;
+  color: white;
+  background-position: center !important;
+  background-size: cover !important;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cover h1 {
+  color: #f2f2f2;
+}
+.cover a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0d0d0d;
+  background: #f2f2f2;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+.cover a:hover {
+  -webkit-transition: -webkit-filter 0.2s ease-out;
+  transition: -webkit-filter 0.2s ease-out;
+  transition: filter 0.2s ease-out;
+  transition: filter 0.2s ease-out, -webkit-filter 0.2s ease-out;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin-left: 1em;
+}
+
+#hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/raceCar.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/raceCar.jpg");
+}
+
+#AlFursan {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/team.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/team.jpg");
+}
+
+#TitanPerformance {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/TitanPerformanceGarage.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/TitanPerformanceGarage.jpg");
+}
+
+#Aprilia {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/ApriliaBike.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/ApriliaBike.jpg");
+}
+
+.logo {
+  height: 50%;
+  max-width: 75%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
