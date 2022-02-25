@@ -4,38 +4,39 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet' href='css/main.css')
     
+    link(rel='stylesheet' href='css/main.css')
     //- link(rel="icon" type="image/x-icon" href="/images/favicon.ico")
     title Al Fursan
   body
-    section#hero.cover
+    section(bg="hero.jpg")#hero.cover
       div
-        h1 This. is. Al Fursan.
+        h1 This. Is. Al Fursan.
         a.btn(href="#aboutUs") Learn More
-      video.logo(src="assets/vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, controls=false, disabled)
-    section#aboutUs.content
+      video.logo(data="vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, disabled)
+    
+    section(bg="group.jpg")#aboutUs.content
       h1.red About Us
       .banners
         div
-          img(src="assets/icon/team.png")
+          img(data="icon/team.png")
           p <b>Al Fursan</b> is our team of aspiring engineers
         div
-          img(src="assets/logo/sae.svg")
-          p Part of the <b>Society of Automotive Engineers</b> ecosystem
+          img(data="logo/sae.svg")
+          p Part of <b>Society of Automotive Engineers</b> ecosystem
         div
-          img(src="assets/icon/topRated.png")
+          img(data="icon/topRated.png")
           p Participated in various <b>Formula SAE</b> competitions
-    section#Aprilia.cover
+    section(bg="apriliaBike.jpg")#Aprilia.cover
       div
         h1 Engine Sponsor
         a.btn(href="#") Learn More
-      img.logo(src="assets/logo/ApriliaSocietyMotorsSquareTransparent.png")
-    section#TitanPerformance.cover
+      img.logo(data="logo/ApriliaSocietyMotorsSquareTransparent.png")
+    section(bg="weldingTitan.jpg")#TitanPerformance.cover
       div
         h1 Technical Sponsor
         a.btn(href="#") Learn More
-      img.logo(src="assets/logo/TitanPerformanceLogo.png")
+      img.logo(data="logo/TitanPerformanceLogo.png")
     
     
     //- section.content
@@ -48,7 +49,8 @@ html(lang='en')
           img 
           p Among the Top-5 universities in Dubai.
     
-    section#AlFursan.cover
+    section(bg="bitsCampus.jpg")#AlFursan.cover
       marquee
         p The page is currently under construction
-    script(src='js/main.js')
+
+    script(src='js/lazyLoad.js', defer)

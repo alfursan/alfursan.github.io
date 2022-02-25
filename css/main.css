@@ -1,4 +1,4 @@
-/* montserrat-regular - latin */
+/* montserrat-regular */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -7,7 +7,7 @@
   src: url("../fonts/Montserrat/montserrat-v21-latin-regular.eot");
   src: local(""), url("../fonts/Montserrat/montserrat-v21-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat/montserrat-v21-latin-regular.woff2") format("woff2"), url("../fonts/Montserrat/montserrat-v21-latin-regular.woff") format("woff"), url("../fonts/Montserrat/montserrat-v21-latin-regular.ttf") format("truetype"), url("../fonts/Montserrat/montserrat-v21-latin-regular.svg#Montserrat") format("svg");
 }
-/* montserrat-700 - latin */
+/* montserrat-bold */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -43,6 +43,8 @@ body {
 
 section {
   height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
 }
 
 .cover {
@@ -83,42 +85,22 @@ ul li {
 }
 
 #hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/bg/hero.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/bg/hero.jpg");
   background-attachment: fixed;
 }
 #hero .logo {
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 40%;
+  max-width: 40%;
 }
 #hero a.btn {
   background: #5e1ae6;
   color: rgba(242, 242, 242, 0.9);
 }
 
-#aboutUs {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/bg/group.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/bg/group.jpg");
-}
-
-#AlFursan {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/bg/bitsCampus.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/bg/bitsCampus.jpg");
-}
-
-#TitanPerformance {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/bg/weldingTitan.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/bg/weldingTitan.jpg");
-}
 #TitanPerformance a.btn {
   background: #ffd500;
   color: #0d0d0d;
 }
 
-#Aprilia {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../assets/bg/ApriliaBike.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../assets/bg/ApriliaBike.jpg");
-}
 #Aprilia a.btn {
   background: #e61a1a;
   color: rgba(242, 242, 242, 0.9);
@@ -126,7 +108,7 @@ ul li {
 
 .logo {
   max-height: 30%;
-  max-width: 40%;
+  max-width: 30%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -192,13 +174,24 @@ h1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: auto 0;
+  margin: auto;
+}
+.banners p {
+  margin: none;
 }
 .banners div {
   width: 20%;
   padding: 1em;
   background: rgba(230, 26, 26, 0.35);
-  border-radius: 10%;
+  border-radius: 1em;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.banners div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .banners img {
   max-width: 100%;
@@ -210,4 +203,19 @@ h1 {
 
 marquee {
   font-size: 2em;
+}
+
+img, video, iframe {
+  min-width: 50px;
+  max-width: 50px;
+}
+
+[data] {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+
+.loaded {
+  opacity: 1;
 }
