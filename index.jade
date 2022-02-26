@@ -1,56 +1,45 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    
-    link(rel='stylesheet' href='css/main.css')
-    //- link(rel="icon" type="image/x-icon" href="/images/favicon.ico")
-    title Al Fursan
-  body
-    section(bg="hero.jpg")#hero.cover
-      div
-        h1 This. Is. Al Fursan.
-        a.btn(href="#aboutUs") Learn More
-      video.logo(data="vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, disabled)
-    
-    section(bg="group.jpg")#aboutUs.content
-      h1.red About Us
-      .banners
-        div
-          img(data="icon/team.png")
-          p <b>Al Fursan</b> is our team of aspiring engineers
-        div
-          img(data="logo/sae.svg")
-          p Part of <b>Society of Automotive Engineers</b> ecosystem
-        div
-          img(data="icon/topRated.png")
-          p Participated in various <b>Formula SAE</b> competitions
-    section(bg="apriliaBike.jpg")#Aprilia.cover
-      div
-        h1 Engine Sponsor
-        a.btn(href="#") Learn More
-      img.logo(data="logo/ApriliaSocietyMotorsSquareTransparent.png")
-    section(bg="weldingTitan.jpg")#TitanPerformance.cover
-      div
-        h1 Technical Sponsor
-        a.btn(href="#") Learn More
-      img.logo(data="logo/TitanPerformanceLogo.png")
-    
-    
-    //- section.content
-      h1.red About BITS
-      .banners
-        div
-          img 
-          p Ranked as the #1 private engineering university in India
-        div 
-          img 
-          p Among the Top-5 universities in Dubai.
-    
-    section(bg="bitsCampus.jpg")#AlFursan.cover
-      marquee
-        p The page is currently under construction
+extends layout.jade
 
-    script(src='js/lazyLoad.js', defer)
+block content
+  section(bg="hero.jpg")#hero.cover
+    div
+      h1 This. Is. Al Fursan.
+      a.btn(href="#aboutUs") Learn More
+    video.logo(data="vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, disabled)
+  
+  section(bg="group.jpg")#aboutUs.content
+    h1.red About Us
+    .banners
+      div
+        img(data="icon/team.png")
+        p <b>Al Fursan</b> is our team of aspiring engineers
+      div
+        img(data="logo/sae.svg")
+        p Part of <b>Society of Automotive Engineers</b> ecosystem
+      div
+        img(data="icon/topRated.png")
+        p Participated in various <b>Formula SAE</b> competitions
+  section(bg="apriliaBike.jpg")#Aprilia.cover
+    div
+      h1 Engine Sponsor
+      a.btn(href="pages/aprilia.html") Learn More
+    img.logo(data="logo/ApriliaSocietyMotorsSquareTransparent.png")
+  section(bg="weldingTitan.jpg")#TitanPerformance.cover
+    div
+      h1 Technical Sponsor
+      a.btn(href="pages/titan.html") Learn More
+    img.logo(data="logo/titanTransparentWhite.svg")
+  
+  //- section.content
+    h1.red About BITS
+    .banners
+      div
+        img 
+        p Ranked as the #1 private engineering university in India
+      div 
+        img 
+        p Among the Top-5 universities in Dubai.
+  
+  section(bg="bitsCampus.jpg")#AlFursan.cover
+    marquee
+      p The page is currently under construction
