@@ -1,7 +1,7 @@
-@use "font.sass" as *
-@use "scrollBar.sass" as *
-@use "mixins.sass" as *
-@use "colors.sass" as *
+@use "modules/font.sass" as *
+@use "modules/scrollBar.sass" as *
+@use "modules/mixins.sass" as *
+@use "modules/colors.sass" as *
 
 html,
 body
@@ -111,12 +111,14 @@ h1
     background: $redt
     border-radius: 1em
     +hover()
-  img
-    max-width: 100%
-    height: 5em
-    background: $white
-    padding: 0.5em
-    border-radius: 100%
+    +imgHover
+
+    img
+      max-width: 100%
+      height: 5em
+      background: $white
+      padding: 0.5em
+      border-radius: 100%
 
 
 marquee

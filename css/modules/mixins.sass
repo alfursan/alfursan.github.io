@@ -1,0 +1,23 @@
+=btn($bgColor, $color)
+  a.btn
+    background: $bgColor
+    color: $color
+
+
+// hover
+=hoverTransform()
+  transform: scale(1.2)
+=hoverTransition()
+  transition: transform 0.2s ease
+
+=hover()
+  +hoverTransition()
+  &:hover
+    +hoverTransform()
+
+=imgHover()
+  img
+    +hoverTransition()
+  &:hover
+    img
+      +hoverTransform()
