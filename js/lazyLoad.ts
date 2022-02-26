@@ -8,7 +8,7 @@ const lazyLoadOptions = {
 const assets = document.querySelectorAll("img, video, audio, iframe")
 for (let i = 0; i < assets.length; i++)
 {
-  assets[i].setAttribute("src", "assets/loading.svg")
+  // assets[i].setAttribute("src", "assets/loading.svg")
   assets[i].setAttribute("loading", "lazy")
 }
 const assetObserver = new IntersectionObserver((entries, assetObserver) => {
@@ -28,11 +28,11 @@ assets.forEach((asset) => {
 // bg
 const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(assets/"
 const backgrounds = document.querySelectorAll("[bg]")
-for (let i = 0; i < backgrounds.length; i++) {
-  const background = <HTMLElement>backgrounds[i];
-  const url = "loading.svg"
-  background.style.backgroundImage = gradient + url + ")"
-}
+// for (let i = 0; i < backgrounds.length; i++) {
+//   const background = <HTMLElement>backgrounds[i];
+//   const url = "loading.svg"
+//   background.style.backgroundImage = gradient + url + ")"
+// }
 
 const bgObserver = new IntersectionObserver((entries, bgObserver) => {
   entries.forEach((entry) => {

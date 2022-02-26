@@ -4,11 +4,12 @@ block content
   section(bg="hero.jpg")#hero.cover
     div
       h1 This. Is. Al Fursan.
-      a.btn(href="#aboutUs") Learn More
-    video.logo(data="vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, disabled)
+      a.alFursanBtn.btn(href="#aboutUs") Learn More
+    //- video.logo(data="vid/AlFursanLogoAnimationCompressed.mp4", autoplay, muted, disabled)
+    img#alFursanLogo.logo(data="logo/AlFursanLogoBlackTransparent.png")
   
   section(bg="group.jpg")#aboutUs.content
-    h1.red About Us
+    h1.red Who are we?
     .banners
       div
         img(data="icon/team.png")
@@ -19,16 +20,9 @@ block content
       div
         img(data="icon/topRated.png")
         p Participated in various <b>Formula SAE</b> competitions
-  section(bg="apriliaBike.jpg")#Aprilia.cover
-    div
-      h1 Engine Sponsor
-      a.btn(href="pages/aprilia.html") Learn More
-    img.logo(data="logo/ApriliaSocietyMotorsSquareTransparent.png")
-  section(bg="weldingTitan.jpg")#TitanPerformance.cover
-    div
-      h1 Technical Sponsor
-      a.btn(href="pages/titan.html") Learn More
-    img.logo(data="logo/titanTransparentWhite.svg")
+  section(bg="weldingTitan.jpg")#sponsors.cover
+    h1 Our Sponsors
+    a.sponsorsBtn.btn(href="sponsors.html") Learn More
   
   //- section.content
     h1.red About BITS
@@ -36,7 +30,7 @@ block content
       div
         img 
         p Ranked as the #1 private engineering university in India
-      div 
+      div
         img 
         p Among the Top-5 universities in Dubai.
   
