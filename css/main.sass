@@ -13,6 +13,7 @@ body
 section
   width: 100%
   height: 100vh
+  padding: 1em
   background: linear-gradient($bgColor, $bgColor)
   color: $white
   background-position: center
@@ -21,6 +22,9 @@ section
 h1
   color: $white
   font-size: 2.5em
+  max-width: 80vw
+  margin-left: auto
+  margin-right: auto
 
 
 .cover
@@ -29,7 +33,9 @@ h1
   display: flex
   align-items: center
   justify-content: space-evenly
-  
+
+  +mobileFlex
+
   &:nth-of-type(odd)
     flex-direction: row-reverse
   &:nth-of-type(even)
@@ -45,6 +51,11 @@ h1
   max-height: 40%
   object-fit: contain
 
+  @media (max-width: 1000px)
+    width: 80vw
+    max-width: 80vw
+    // max-height: 40%
+
 
 a.btn
   text-decoration: none
@@ -52,7 +63,7 @@ a.btn
   padding: 0.5em 1em
   border-radius: 0.5em
   display: inline-block
-  +hover()
+  +hover
 
 .content
   text-align: center
@@ -62,7 +73,13 @@ a.btn
   align-items: space-evenly
   
   h1
-    margin: 10vh 0 0 0
+    margin-top: 10vh
+    @media (max-width: 1000px)
+      margin-top: 5vh
+
+#aboutUs
+  @media (max-width: 1000px)
+    height: 200%
 
 .banners
   width: 100%
@@ -73,16 +90,21 @@ a.btn
   justify-content: space-evenly
 
   margin: auto
+  +mobileFlex
 
   p
     margin-bottom: 0
 
   div
     width: 20%
+    @media (max-width: 1000px)
+      width: 50%
+      margin: 1em
+      
     padding: 1em
     background: $redt
     border-radius: 1em
-    +hover()
+    +hover
     +imgHover
 
     img

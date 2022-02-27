@@ -4,19 +4,25 @@
 
 
 // hover
-=hoverTransform()
+=hoverTransform
   transform: scale(1.2)
-=hoverTransition()
+=hoverTransition
   transition: transform 0.2s ease
 
-=hover()
-  +hoverTransition()
+=hover
+  +hoverTransition
   &:hover
-    +hoverTransform()
+    +hoverTransform
 
-=imgHover()
+=imgHover
   img
-    +hoverTransition()
+    +hoverTransition
   &:hover
     img
-      +hoverTransform()
+      +hoverTransform
+
+// mobile
+=mobileFlex
+  @media (max-width: 1000px)
+    flex-direction: column-reverse !important
+    align-items: center !important
