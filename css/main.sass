@@ -15,8 +15,8 @@ section
   height: 100vh
   background: linear-gradient($bgColor, $bgColor)
   color: $white
-  background-position: center !important
-  background-size: cover !important
+  background-position: center
+  background-size: cover
 
 h1
   color: $white
@@ -38,13 +38,11 @@ h1
   
 #hero
   background-attachment: fixed
-  .logo
-    max-height: 40%
-    max-width: 40%
 
 .logo
-  max-height: 30%
-  max-width: 30%
+  width: 40vw
+  max-width: 40vw
+  max-height: 40%
   object-fit: contain
 
 
@@ -77,7 +75,7 @@ a.btn
   margin: auto
 
   p
-    margin: none
+    margin-bottom: 0
 
   div
     width: 20%
@@ -101,8 +99,6 @@ marquee
 img, video, iframe
   min-width: 50px
   max-width: 50px
-
-[data]
   opacity: 0
   transition: opacity 2s ease 1s
 
