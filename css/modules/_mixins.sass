@@ -1,33 +1,28 @@
-=btn($bgColor, $color)
-  background: $bgColor
-  color: $color
-
-
 // hover
 =hoverTransform
-  transform: scale(1.2)
+	transform: scale(1.2)
 =hoverTransition
-  transition: transform 0.2s ease
+	transition: transform 0.2s ease
 
 =hover
-  +hoverTransition
-  &:hover
-    +hoverTransform
+	+hoverTransition
+	&:hover
+		+hoverTransform
 
 =imgHover
-  img
-    +hoverTransition
-  &:hover
-    img
-      +hoverTransform
+	img
+		+hoverTransition
+	&:hover
+		img
+			+hoverTransform
 
 // mobile
 =mobileFlex
-  @media (max-width: 1000px)
-    flex-direction: column !important
-    align-items: center !important
+	@media (max-width: 1000px)
+		flex-direction: column !important
+		align-items: center !important
 
 =mobileFlexRev
-  @media (max-width: 1000px)
-    flex-direction: column-reverse !important
-    align-items: center !important
+	@media (max-width: 1000px)
+		flex-direction: column-reverse !important
+		align-items: center !important

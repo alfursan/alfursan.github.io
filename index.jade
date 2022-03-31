@@ -1,7 +1,8 @@
 extends _layout.jade
 
 block content
-	section#hero.cover( style="background-image: linear-gradient(rgba(0, 0%, 0%, 0.75), hsla(0, 0%, 0%, 0.75)) , url('assets/bg/hero.jpg') ")
+	-var heroImage = "background-image: linear-gradient(hsla(0, 0%, 0%, 0.75), hsla(0, 0%, 0%, 0.75)) , url('assets/bg/hero.jpg')"
+	section#hero.cover(style=heroImage)
 		div
 			h1 This is<br/>Al Fursan.
 			a.alFursanBtn.btn(href="#aboutUs") Learn More
@@ -21,7 +22,7 @@ block content
 	//- section(bg="working.jpg" style="background-position: top")#goals.content
 		h1.red Our Goals
 		p Our brand new team, with members from various fields are working toward the following goals:
-  section(bg="weldingTitan.jpg")#TitanPerformance.cover
+	section(bg="weldingTitan.jpg")#TitanPerformance.cover
 		div
 			h1 Technical Sponsor
 			a.titanBtn.btn(href="#") Learn More
@@ -31,7 +32,5 @@ block content
 			h1 Engine Sponsor
 			a.apriliaBtn.btn(href="https://www.aprilia.com") Website
 		img.logo(data="logo/ApriliaSocietyMotorsSquareTransparent.png")
-	
-	section(bg="bitsCampus.jpg")#AlFursan.cover
-		marquee
-			p The page is currently under construction
+	include components/_gallery.jade
+	include components/_tiers.jade

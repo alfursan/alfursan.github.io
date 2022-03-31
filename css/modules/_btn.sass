@@ -1,0 +1,23 @@
+@use "colors" as *
+@use "mixins" as *
+
+=btn($bgColor, $color:white)
+	background: $bgColor
+	color: $color
+	text-decoration: none
+	font-weight: bold
+	padding: 0.5em 1em
+	border-radius: 0.5em
+	display: inline-block
+
+.alFursanBtn
+	+btn($purplet, $white)
+
+.titanBtn
+	+btn($yellowt, $black)
+
+.apriliaBtn
+	+btn($redt, $white)
+
+.sponsorsBtn
+	+btn($redt, $white)
