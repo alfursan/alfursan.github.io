@@ -84,7 +84,7 @@
 
 .titanBtn {
   background: rgba(255, 213, 0, 0.8);
-  color: #0d0d0d;
+  color: #1a1a1a;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5em 1em;
@@ -113,7 +113,7 @@
 }
 
 #contact {
-  background: #0d0d0d;
+  background: #1a1a1a;
 }
 #contact .container {
   display: -webkit-box;
@@ -194,7 +194,7 @@
 }
 
 section#gallery {
-  background-color: #0d0d0d;
+  background-color: #1a1a1a;
 }
 
 .mySlides {
@@ -239,7 +239,7 @@ section#gallery {
   border-radius: 0.5em;
 }
 .slideshow-container .prev:hover, .slideshow-container .next:hover {
-  background-color: #0d0d0d;
+  background-color: #1a1a1a;
 }
 .slideshow-container .text {
   color: rgba(242, 242, 242, 0.9);
@@ -412,11 +412,11 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #0d0d0d;
+  background: #1a1a1a;
 }
 #tiers table {
   text-align: center;
-  color: #0d0d0d;
+  color: #1a1a1a;
   background: rgba(242, 242, 242, 0.9);
   font-weight: bold;
   border-spacing: 0;
@@ -428,7 +428,7 @@ body::-webkit-scrollbar-thumb {
 #tiers th, #tiers td {
   padding: 1em;
   margin: 0;
-  border: 2px solid black;
+  border: 2px solid #1a1a1a;
 }
 
 html,
