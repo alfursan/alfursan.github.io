@@ -1,11 +1,12 @@
 @use "colors" as *
+@use "sass:color"
 
 #tiers
 	display: flex
 	flex-direction: column
 	align-items: center
 	justify-content: flex-start
-	background: $bgWhite
+	background: $whiteBg
 	@media screen and (max-width: 1000px)
 		display: none
 	h1
@@ -14,15 +15,19 @@
 		text-align: center
 		font-size: 0.8em
 		color: $black
-		background: $bgWhite
 		border-spacing: 0
 		border-collapse: collapse
 	thead
 		color: $white
 		background: $red
 		font-weight: bold
+	tbody
+		tr:nth-child(odd)
+			background-color: color.scale($whiteBg, $saturation: +50%, $lightness: +60%)
+		tr:nth-child(even)
+			background-color: color.scale($whiteBg, $saturation: +80%, $lightness: +40%)
 	th, td
 		height: 2em
 		padding: 0.5em 1em
 		margin: 0
-		border: 3px solid $black
+		border: 2px solid $black
