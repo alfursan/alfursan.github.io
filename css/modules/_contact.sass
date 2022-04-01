@@ -2,27 +2,35 @@
 @use "mixins" as *
 
 #contact
-  background: $black
-  .container
-    display: flex
-    align-content: center
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    width: 80%
-    height: 100%
-    margin: auto
-  table
-    margin: 10vh
-  .icons
-    width: 100%
-    display: flex
-    justify-content: center
-    align-items: center
-  a
-    padding: 1em
-    +imgHover
-  img
-    filter: contrast(0) brightness(200%)
-    height: 50px
-    max-width: 100px
+	background: $black
+	.container
+		display: flex
+		align-content: center
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		width: 80%
+		height: 100%
+		margin: auto
+	table
+		margin: 10vh 10vw
+		max-width: 80vw
+	td
+		padding: 1em
+		&:nth-child(2)
+			min-width: 25ex
+		text-align: justify
+		@media screen and (max-width: 1000px)
+			text-align: right
+	.icons
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	a
+		padding: 1em 2em
+		+imgHover
+	img
+		filter: contrast(0) brightness(200%)
+		height: 50px
+		max-width: 100px
