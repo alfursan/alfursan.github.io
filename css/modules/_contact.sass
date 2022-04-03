@@ -2,11 +2,13 @@
 @use "mixins" as *
 
 #contact
-	background: $black
+	background: $blackl
+	min-height: initial
 	.container
+		min-height: 30vh
 		display: flex
 		align-content: center
-		justify-content: space-around
+		justify-content: center
 		align-items: center
 		flex-direction: column
 		width: 80%
@@ -23,6 +25,6 @@
 		padding: 1em 2em
 		+imgHover
 	img
-		filter: contrast(0) brightness(200%)
-		height: 50px
+		// filter: contrast(0) brightness(200%)
+		height: 2em
 		max-width: 100px
