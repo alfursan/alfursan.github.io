@@ -4,20 +4,19 @@
 #contact
 	background: $blackl
 	min-height: initial
-	.icons
-		min-height: 5em
+	.icons, .uni
 		width: 100%
 		margin: auto
+		min-height: 5em
 		display: flex
 		justify-content: center
 		align-items: center
 	a
-		padding: 1em 2em
 		+imgHover
 		filter: saturate(0) invert(0.8)
 		&:hover
-			filter: saturate(0) invert(1) sepia(1) hue-rotate(182deg) brightness(50%) saturate(200)
+			filter: saturate(0) invert(1) sepia(1) hue-rotate(182deg) brightness(30%) saturate(300)
 	img
-		// filter: contrast(0) brightness(200%)
+		margin: 1em 2em		
 		height: 2em
 		max-width: 100px
