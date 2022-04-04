@@ -13,6 +13,15 @@ html(lang='en')
 		block content
 		include components/_contact.jade
 		//- include components/_comingSoon.jade
-		script(src='js/lazyLoad.js', defer)
-		script(src='js/nav.js', defer)
-		script(src='js/gallery.js', defer)
+		script.
+			window.addEventListener("load", function(){
+				loadScript("lazyLoad");
+				loadScript("nav");
+				loadScript("gallery");
+			});
+
+			function loadScript(name){
+				const script = document.createElement("script");
+				script.src = 'js/' + name + '.js';
+				document.body.appendChild(script);
+			}

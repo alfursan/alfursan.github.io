@@ -10,8 +10,8 @@ const assetObserver = new IntersectionObserver((entries, assetObserver) => {
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) return
 		
-		const asset = <HTMLMediaElement> entry.target
-		asset.src = "assets/" + asset.getAttribute("data")
+		const asset = <HTMLMediaElement> entry.target;
+		asset.src = "assets/" + asset.getAttribute("data");		
 		assetObserver.unobserve(entry.target)
 	});
 }, lazyLoadOptions)
