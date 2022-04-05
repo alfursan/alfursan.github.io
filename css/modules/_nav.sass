@@ -7,12 +7,15 @@ $width: 1000px
 	// padding-top: 5vh
 
 nav
+	opacity: 0
 	z-index: 1
 	transition: opacity 0.5s ease-out
-	&:not(.sticky)
-		opacity: 0
+	a
+		pointer-events: none
+	&.sticky
+		opacity: 1
 		a
-			cursor: default
+			pointer-events: initial
 	position: fixed
 	text-align: center
 	width: 100vw

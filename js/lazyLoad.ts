@@ -1,3 +1,5 @@
+const assetLoc = "../" + "assets/"
+
 const bgColor:string = "hsla(0, 0%, 0%, 0.65)"
 const lazyLoadOptions = {
 	threshold: 0,
@@ -11,7 +13,7 @@ const assetObserver = new IntersectionObserver((entries, assetObserver) => {
 		if (!entry.isIntersecting) return
 		
 		const asset = <HTMLMediaElement> entry.target;
-		asset.src = "assets/" + asset.getAttribute("data");		
+		asset.src = assetLoc + asset.getAttribute("data");		
 		assetObserver.unobserve(entry.target)
 	});
 }, lazyLoadOptions)
@@ -25,7 +27,7 @@ assets.forEach((asset) => {
 })
 
 // bg
-const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(assets/"
+const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(" + assetLoc
 const backgrounds = document.querySelectorAll("[bg]")
 
 const bgObserver = new IntersectionObserver((entries, bgObserver) => {
