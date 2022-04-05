@@ -1,3 +1,5 @@
+document.getElementById("heroImg").classList.add("loaded")
+
 const scripts = ["lazyLoad", "nav"]; // , "gallery"
 //- const styles = ["nav"];
 

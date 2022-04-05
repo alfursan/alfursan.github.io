@@ -3,7 +3,7 @@ const assetLoc = "../" + "assets/"
 const bgColor:string = "hsla(0, 0%, 0%, 0.65)"
 const lazyLoadOptions = {
 	threshold: 0,
-	rootMargin: "0px 0px 300px 0px"
+	rootMargin: "0px 0px 600px 0px"
 };
 
 // assets
