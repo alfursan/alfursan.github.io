@@ -2,7 +2,9 @@ const scripts = ["lazyLoad", "nav"]; // , "gallery"
 //- const styles = ["nav"];
 
 window.addEventListener("load", function(){
-	document.getElementById("heroImg").classList.add("loaded")
+	const heroImg = document.querySelector("#heroImg")
+	if(heroImg!=null)
+		heroImg.classList.add("loaded")
 	scripts.forEach(loadScript)
 	//- styles.forEach(loadStyle)
 });

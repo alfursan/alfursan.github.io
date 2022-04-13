@@ -1,1 +1,1 @@
-var nav=document.getElementById("nav");function mobileNav(){nav.classList.contains("responsive")?nav.classList.remove("responsive"):nav.classList.add("responsive")}function stickyNav(){const s=.9*window.innerHeight;window.scrollY>=s?nav.classList.add("sticky"):nav.classList.remove("sticky")}window.onscroll=function(){stickyNav()};
+const toggleButton=document.getElementById("togglebtn"),navbarLinks=document.getElementById("nlink");toggleButton.addEventListener("click",(()=>{navbarLinks.classList.toggle("active"),console.log("toggle")}));

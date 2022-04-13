@@ -1,21 +1,21 @@
-var nav = document.getElementById("nav");
-window.onscroll = function() {
-	stickyNav();
-};
+const toggleButton = document.getElementById('togglebtn')
+const navbarLinks = document.getElementById('nlink')
 
-function mobileNav() {
-	if ( nav.classList.contains("responsive") ){
-		nav.classList.remove("responsive");
-	} else {
-		nav.classList.add("responsive");
-	}
-}
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+  console.log('toggle')
+})
 
-function stickyNav() {
-	const threshold = 0.9 * window.innerHeight
-	if (window.scrollY >= threshold) {
-		nav.classList.add("sticky")
-	} else {
-		nav.classList.remove("sticky");
-	}
-}
+// var nav = document.getElementById("nav");
+// window.onscroll = function() {
+// 	stickyNav();
+// };
+
+// function stickyNav() {
+// 	const threshold = 0.9 * window.innerHeight
+// 	if (window.scrollY >= threshold) {
+// 		nav.classList.add("sticky")
+// 	} else {
+// 		nav.classList.remove("sticky");
+// 	}
+// }
