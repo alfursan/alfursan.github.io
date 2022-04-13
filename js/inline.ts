@@ -2,9 +2,11 @@ const scripts = ["lazyLoad", "nav"]; // , "gallery"
 //- const styles = ["nav"];
 
 window.addEventListener("load", function(){
-	const heroImg = document.querySelector("#heroImg")
-	if(heroImg!=null)
-		heroImg.classList.add("loaded")
+	const eager = document.querySelectorAll(".eager")
+	if(eager!=null)
+		eager.forEach(element => {
+			element.classList.add("loaded")
+		});
 	scripts.forEach(loadScript)
 	//- styles.forEach(loadStyle)
 });
