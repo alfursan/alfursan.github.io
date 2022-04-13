@@ -1,19 +1,23 @@
 nav.navbar
-	.logo AL FURSAN
-	a#togglebtn.toggle-button(href='#')
-		span.bar
-		span.bar
-		span.bar
-	#nlink.navbar-links
-		ul
-			li
-				a(href='#') About
-			li
-				a(href='#') Sponsor Us
-			li
-				a(href='#') Gallery
-			li
-				a(href='#') Contact
+	.navContainer
+		a.logo(href='index.html#hero')
+			img(data="logo/AlFursanLogoBlackTransparent.png")
+		a#togglebtn.toggle-button(href='javascript:void(0);')
+			span.bar
+			span.bar
+			span.bar
+		#nlink.navbar-links
+			ul
+				//- li
+				//- 	a(href='index.html#aboutUs') About
+				li
+					a(href='index.html#bits') Our Sponsors
+				li
+					a(href='index.html#tiers') Sponsor Us
+				//- li
+					a(href='#') Gallery
+				li
+					a(href='index.html#contact') Contact
 
 
 //- Thahir
@@ -25,6 +29,6 @@ nav.navbar
 //- 		.right
 //- 			a(href='index.html#aboutUs') About
 //- 			a(href='index.html#tiers') Sponsor Us
-//- 			a(href='#contact') Contact
+//- 			a(href='index.html#contact') Contact
 //- 			a.icon(href='javascript:void(0);' onclick='mobileNav()')
 //- 				i &equiv;
