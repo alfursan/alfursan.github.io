@@ -6,6 +6,11 @@ toggleButton.addEventListener('click', () => {
   console.log('toggle')
 })
 
+const thahirLinks = navbarLinks.addEventListener('click', () => {
+	navbarLinks.classList.toggle('active')
+	console.log('toggle')
+})
+
 // var nav = document.getElementById("nav");
 // window.onscroll = function() {
 // 	stickyNav();
