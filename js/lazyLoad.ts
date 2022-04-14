@@ -1,5 +1,6 @@
 const assetLoc = "../" + "assets/"
 
+const blackt:string = "hsla(0, 0%, 0%, 0.90)"
 const bgColor:string = "hsla(0, 0%, 0%, 0.65)"
 const lazyLoadOptions = {
 	threshold: 0,
@@ -25,11 +26,14 @@ assets.forEach((asset) => {
 		asset.classList.add("loaded")
 	}
 })
-
+// linear6
 // bg
-const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(" + assetLoc
-const backgrounds = document.querySelectorAll("[bg]")
+// const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(" + assetLoc
 
+// linear-gradient(black 0%, bgColor 10%, bgColor 90%, black 100%)
+const gradient:string = "linear-gradient(" + blackt + " 0%, " + bgColor + " 25%, " + bgColor + " 75%, "+ blackt + " 100%), url(" + assetLoc
+
+const backgrounds = document.querySelectorAll("[bg]")
 const bgObserver = new IntersectionObserver((entries, bgObserver) => {
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) return
