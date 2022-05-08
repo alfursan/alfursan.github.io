@@ -14,6 +14,7 @@ body
 	font-family: Montserrat
 	scroll-behavior: smooth
 	scroll-margin: 10em
+	background: $black
 
 section
 	width: 100%
@@ -94,6 +95,11 @@ img, video, iframe
 	max-width: 50px
 	opacity: 0
 	transition: opacity 2s ease
+	transform: translateZ(0)
+	backface-visibility: hidden
+	// filter: blur(0px)
+	&.sharp
+		image-rendering: pixelated
 	// &#heroImg
 		// transition-delay: 1s
 
@@ -107,3 +113,7 @@ img, video, iframe
 
 .red
 	color: $red
+
+.header 
+	text-align: center
+	padding: 3em 0

@@ -14,8 +14,12 @@ const assetObserver = new IntersectionObserver((entries, assetObserver) => {
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) return
 		
-		const asset = <HTMLMediaElement> entry.target;
-		asset.src = assetLoc + asset.getAttribute("data");		
+		const asset = <HTMLMediaElement> entry.target
+		const data = asset.getAttribute("data")
+		
+		if(data.includes("svg"))
+			asset.classList.add("sharp")
+		asset.src = assetLoc + data
 		assetObserver.unobserve(entry.target)
 	});
 }, lazyLoadOptions)
@@ -31,14 +35,18 @@ assets.forEach((asset) => {
 // bg
 // const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(" + assetLoc
 // const gradient:string = "linear-gradient(" + blackt + " 0%, " + bgColor + " 15%, " + bgColor + " 85%, "+ blackt + " 100%), url(" + assetLoc
-const gradient:string = "linear-gradient(" + black + " 0%, " + bgColor + " 20%, " + bgColor + " 80%, "+ black + " 100%), url(" + assetLoc
+const gradient:string = "linear-gradient(" + black + " 0%, " + bgColor + " 10%, " + bgColor + " 90%, "+ black + " 100%), url(" + assetLoc
 
 const backgrounds = document.querySelectorAll("[bg]")
 const bgObserver = new IntersectionObserver((entries, bgObserver) => {
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) return
 		const background = <HTMLElement> entry.target
-		const url = "bg/" + background.getAttribute("bg");
+		const data = background.getAttribute("bg")
+		const url = "bg/" + data
+
+		// if(data.includes("svg"))
+			background.classList.add("sharp")
 		background.style.backgroundImage = gradient + url + ")"
 		bgObserver.unobserve(entry.target)
 	});

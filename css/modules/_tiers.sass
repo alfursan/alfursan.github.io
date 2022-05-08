@@ -33,3 +33,43 @@
 		padding: 0.5em 1em
 		margin: 0
 		border: 2px solid $black
+
+// .tiers
+// 	color: black
+// 	font-size: 2em
+// 	clip-path: polygon(70% 0%, 30% 0%, 0% 100%, 100% 100%)
+// 	width: 20ex
+// 	div
+// 		padding: 1em
+// 	.title
+// 		background: white
+// 	.diamond
+// 		background: aqua
+// 	.gold
+// 		background: gold
+// 	.silver
+// 		background: silver
+
+.tiers
+	color: $black
+	font-size: 2em
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-template-rows: repeat(2, 1fr)
+	align-items: center
+	justify-items: center
+	gap: 2ex
+	div
+		background: $purplet
+		line-height: 12ex
+		height: 12ex
+		width: 12ex
+		border-radius: 100%
+	.title
+		background: white
+	.diamond
+		background: aqua
+	.gold
+		background: gold
+	.silver
+		background: silver
