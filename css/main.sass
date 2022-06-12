@@ -26,12 +26,12 @@ section
 #hero
 	min-height: 90vh
 h1
-	color: $white
 	font-size: 2.5em
 	max-width: 80vw
 	margin-left: auto
 	margin-right: auto
-
+h1, h2, h3, h4, h5, h6
+	color: $white
 
 .cover
 	text-align: center
@@ -116,4 +116,17 @@ img, video, iframe
 
 .header 
 	text-align: center
-	padding: 3em 0
+	padding: 3em 0 0 0
+
+.title_sponsor
+	padding-bottom: 2em
+	margin: 0 auto
+	text-align: center
+	img
+		max-width: 80vw
+		max-height: 35vh
+		transition: transform 0.2s ease-out
+		&:hover
+			position: relative
+			transform: scale(1.2)
+			z-index: 20
