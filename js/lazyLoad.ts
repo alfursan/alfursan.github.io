@@ -35,7 +35,7 @@ assets.forEach((asset) => {
 // bg
 // const gradient:string = "linear-gradient(" + bgColor + ", " + bgColor + "), url(" + assetLoc
 // const gradient:string = "linear-gradient(" + blackt + " 0%, " + bgColor + " 15%, " + bgColor + " 85%, "+ blackt + " 100%), url(" + assetLoc
-const gradient:string = "linear-gradient(" + black + " 0%, " + bgColor + " 10%, " + bgColor + " 90%, "+ black + " 100%), url(" + assetLoc
+const gradient:string = "linear-gradient(" + black + " 0%, " + bgColor + " 15%, " + bgColor + " 85%, "+ black + " 100%), url(" + assetLoc
 
 const backgrounds = document.querySelectorAll("[bg]")
 const bgObserver = new IntersectionObserver((entries, bgObserver) => {
