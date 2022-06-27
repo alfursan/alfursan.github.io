@@ -1,28 +1,31 @@
 extends _layout.jade
 
 block content
-	.gallery
+	.sponsors
 		.header
 			h1 Our Sponsors
 		.title_sponsor
-			h1 Title Sponsor
+			h3 Title Sponsor
 			a(href="https://mahykhoory.com/", target="_blank")
 				img(data='logo/khoory.svg')
-		.technical_sponsors
-			h1 Technical Sponsors
-			a(href="https://www.instagram.com/nrt_performance/", target="_blank")
-				img(data='logo/nrt.jpg')
-			img(data='logo/titan_white.svg')
-		.sponsors.grid
-			a(href="https://www.bits-pilani.ac.in/Dubai/", target="_blank")
-				img(data='logo/bitsLogo.svg')
-			//- img(data='logo/ApriliaSocietyMotorsSquareTransparent.png')
-			a(href="https://www.societymotors.ae/en", target="_blank")
-				img(data='logo/SocietyMotors.png')
-			a(href="https://alshirawiequipment.com/", target="_blank")
-				img(data='logo/al_shirawi.png', style = "background: white; padding: 1em")
-			//- img(data='logo/desco_light.png')
-			a(href="https://www.paragonrestaurant.net/", target="_blank")
-				img(data='logo/paragon.jpg')
-			a(href="https://www.af1racing.com/", target="_blank")
-				img(data='logo/af1_racing.png')
+		.technical_sponsors(style="width: 100%; margin:auto")
+			h3 Technical Sponsors
+			.grid
+				a(href="https://www.instagram.com/nrt_performance/", target="_blank")
+					img(data='logo/nrt.jpg')
+				img(data='logo/titan_white.svg')
+		.sponsors
+			h3 Commercial Sponsors
+			.grid
+				a(href="https://www.bits-pilani.ac.in/Dubai/", target="_blank")
+					img(data='logo/bitsLogo.svg')
+				//- img(data='logo/ApriliaSocietyMotorsSquareTransparent.png')
+				a(href="https://www.societymotors.ae/en", target="_blank")
+					img(data='logo/SocietyMotors.png')
+				a(href="https://alshirawiequipment.com/", target="_blank")
+					img(data='logo/al_shirawi.png', style = "background: white; padding: 1em")
+				//- img(data='logo/desco_light.png')
+				a(href="https://www.paragonrestaurant.net/", target="_blank")
+					img(data='logo/paragon.jpg')
+				a(href="https://www.af1racing.com/", target="_blank")
+					img(data='logo/af1_racing.png')
